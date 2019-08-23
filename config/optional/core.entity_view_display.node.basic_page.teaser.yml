@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.basic_page.body
+    - field.field.node.basic_page.field_channel
+    - field.field.node.basic_page.field_municipalities
+    - field.field.node.basic_page.field_paragraphs
+    - field.field.node.basic_page.field_seo_title
+    - field.field.node.basic_page.field_tags
+    - field.field.node.basic_page.field_target_groups
+    - node.type.basic_page
+  module:
+    - user
+id: node.basic_page.teaser
+targetEntityType: node
+bundle: basic_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_channel: true
+  field_municipalities: true
+  field_paragraphs: true
+  field_seo_title: true
+  field_tags: true
+  field_target_groups: true
+  langcode: true
+  shariff_field: true

@@ -1,0 +1,24 @@
+{
+  "name": "kuntaliitto/kuntafibase_basic_page",
+  "type": "drupal-module-custom",
+  "description": "Basic page supporting paragraphs and menu",
+  "keywords": [
+    "Drupal",
+    "KuntaFi",
+    "kuntafibase_basic_page"
+  ],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/Kuntaliitto/kuntafibase_basic_page",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Antti Tuppurainen",
+      "email": "antti.tuppurainen@industry62.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/Kuntaliitto/kuntafibase_basic_page/issues",
+    "source": "https://github.com/Kuntaliitto/kuntafibase_basic_page"
+  },
+  "require": {}
+}
