@@ -13,6 +13,7 @@ dependencies:
   module:
     - field_group
     - paragraphs
+    - paragraphs_features
     - path
     - scheduler
     - scheduler_content_moderation_integration
@@ -94,11 +95,22 @@ content:
       title: Paragraph
       title_plural: Paragraphs
       edit_mode: open
-      add_mode: dropdown
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
       form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
-    type: entity_reference_paragraphs
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+    third_party_settings:
+      paragraphs_features:
+        delete_confirmation: true
+        add_in_between: true
+        split_text: false
+    type: paragraphs
     region: content
   field_seo_title:
     weight: 2
