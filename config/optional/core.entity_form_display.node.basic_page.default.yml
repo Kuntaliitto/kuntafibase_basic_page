@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.basic_page.body
     - field.field.node.basic_page.field_channel
+    - field.field.node.basic_page.field_life_situation
     - field.field.node.basic_page.field_municipalities
     - field.field.node.basic_page.field_paragraphs
     - field.field.node.basic_page.field_seo_title
@@ -26,6 +27,7 @@ third_party_settings:
       children:
         - field_channel
         - field_target_groups
+        - field_life_situation
         - field_municipalities
         - field_tags
       parent_name: ''
@@ -80,8 +82,17 @@ content:
     third_party_settings: {  }
     type: select2_entity_reference
     region: content
-  field_municipalities:
+  field_life_situation:
     weight: 28
+    settings:
+      width: 100%
+      autocomplete: true
+      match_operator: CONTAINS
+    third_party_settings: {  }
+    type: select2_entity_reference
+    region: content
+  field_municipalities:
+    weight: 29
     settings:
       width: 100%
       autocomplete: true
@@ -127,7 +138,7 @@ content:
     type: string_textfield
     region: content
   field_tags:
-    weight: 29
+    weight: 30
     settings:
       width: 100%
       autocomplete: true
