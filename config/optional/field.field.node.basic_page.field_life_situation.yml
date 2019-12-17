@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_life_situation
+    - node.type.basic_page
+    - taxonomy.vocabulary.life_situation
+id: node.basic_page.field_life_situation
+field_name: field_life_situation
+entity_type: node
+bundle: basic_page
+label: 'Life situation'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      life_situation: life_situation
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
